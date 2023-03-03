@@ -30,8 +30,4 @@ public class Participant extends UnicastRemoteObject implements IParticipant{
 		System.out.println(name + " says: " + msg);
 		
 	}
-	public void run() {
-		
-	}
-	
 }

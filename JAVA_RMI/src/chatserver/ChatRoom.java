@@ -47,7 +47,7 @@ public class ChatRoom extends UnicastRemoteObject implements IChatRoom {
 	@Override
 	public void send(IParticipant p, String msg) throws RemoteException {
 		// TODO Auto-generated method stub
-		System.out.println("User " + p.name() + "says: " + msg);
+		System.out.println(p.name() + " says: " + msg);
 		
 	}
 
