@@ -1,0 +1,11 @@
+package babystep1;
+
+public class Printer implements IPrinter{
+
+	@Override
+	public void print(String s) {
+		// TODO Auto-generated method stub
+		System.out.println(s);
+	}
+
+}

@@ -1,0 +1,12 @@
+package chatserver;
+
+import java.rmi.Remote;
+
+public interface IChatRoom extends Remote{
+	 String name();
+	 void connect(IParticipant p);
+	 void leave(IParticipant p);
+	 String[] who();
+	 void send(IParticipant p, String msg);
+
+}

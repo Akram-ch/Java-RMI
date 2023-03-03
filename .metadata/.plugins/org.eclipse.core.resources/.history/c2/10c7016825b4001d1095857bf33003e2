@@ -1,0 +1,7 @@
+package chatserver;
+
+import java.rmi.server.UnicastRemoteObject;
+
+public class Participant extends UnicastRemoteObject implements IParticipant{
+
+}

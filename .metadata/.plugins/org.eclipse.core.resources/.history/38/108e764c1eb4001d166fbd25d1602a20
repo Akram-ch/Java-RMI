@@ -1,0 +1,5 @@
+package babystep1;
+
+public interface IPrinter extends Remote {
+	public void print(String s);
+}

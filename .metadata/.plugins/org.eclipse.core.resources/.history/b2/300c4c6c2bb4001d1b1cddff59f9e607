@@ -1,0 +1,15 @@
+package chatserver;
+
+import java.rmi.RemoteException;
+
+public class Server {
+	
+	public IChatRoom chatroom;
+	public Server() {
+		
+	}
+	
+	public static void main(String[] args) throws RemoteException {
+		chatroom = new ChatRoom("name");
+	}
+}

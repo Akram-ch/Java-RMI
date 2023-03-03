@@ -1,0 +1,22 @@
+package babystep1;
+import java.io.*;
+import java.net.*;
+import java.rmi.registry.LocateRegistry;
+
+public class Client {
+	
+	public static void main(String[] args) throws UnknownHostException, IOException {
+		String name="John Doe";
+		String serverHost = "127.0.0.1";
+		int serverPort = 4320;
+		Registry registry = LocateRegistry(serverHost, 9999);
+		
+		//Connexion
+		Socket soc = new Socket(serverHost,serverPort);
+	
+		soc.close();
+	}
+	
+	
+	
+}

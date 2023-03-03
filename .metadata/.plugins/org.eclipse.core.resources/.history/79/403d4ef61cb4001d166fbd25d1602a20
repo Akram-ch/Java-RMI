@@ -1,0 +1,5 @@
+package babystep1;
+
+public class Printer implements IPrinter{
+
+}

@@ -1,0 +1,7 @@
+package babystep1;
+
+import java.rmi.Remote;
+
+public interface IPrinter extends Remote {
+	public void print(String s);
+}

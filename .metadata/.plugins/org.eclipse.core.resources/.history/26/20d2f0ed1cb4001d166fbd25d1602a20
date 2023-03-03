@@ -1,0 +1,5 @@
+package babystep1;
+
+public interface IPrinter {
+
+}

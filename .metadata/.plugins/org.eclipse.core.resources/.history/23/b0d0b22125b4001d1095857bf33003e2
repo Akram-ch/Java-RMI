@@ -1,0 +1,5 @@
+package chatserver;
+
+public class IParticipant extends Remote {
+
+}

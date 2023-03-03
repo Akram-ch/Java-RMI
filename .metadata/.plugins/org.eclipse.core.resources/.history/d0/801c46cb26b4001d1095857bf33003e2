@@ -1,0 +1,24 @@
+package chatserver;
+
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+import java.util.ArrayList;
+
+public class ChatRoom extends UnicastRemoteObject implements IChatRoom {
+
+	ArrayList<IParticipant> participants;
+	String name;
+	
+	protected ChatRoom() throws RemoteException {
+		participants = new ArrayList<IParticipant>();
+	}
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@Override
+
+
+}

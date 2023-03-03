@@ -1,0 +1,8 @@
+package chatserver;
+
+public class Server {
+	IChatRoom chatroom;
+	public static void main(String[] args) {
+		
+	}
+}
