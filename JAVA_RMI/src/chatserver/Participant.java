@@ -27,7 +27,11 @@ public class Participant extends UnicastRemoteObject implements IParticipant{
 	@Override
 	public void receive(String name, String msg) {
 		// TODO Auto-generated method stub
+		System.out.println(name + " says: " + msg);
 		
 	}
-
+	public void run() {
+		
+	}
+	
 }

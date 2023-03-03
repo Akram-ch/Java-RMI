@@ -29,6 +29,7 @@ public class ChatRoom extends UnicastRemoteObject implements IChatRoom {
 	@Override
 	public void connect(IParticipant p)  throws RemoteException{
 		participants.add(p);
+		System.out.println(p.name() + " has entered the chat");
 	}
 
 	@Override
