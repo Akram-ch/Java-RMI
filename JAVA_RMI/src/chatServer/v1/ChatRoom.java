@@ -11,10 +11,12 @@ public class ChatRoom extends UnicastRemoteObject implements IChatRoom {
 	String name;
 	List<IParticipant> participants;
 
+
 	ChatRoom(String name)throws RemoteException{
 		this.name = name;
 		this.participants = new LinkedList<IParticipant>();
 	}
+
 
 	@Override
 	public String name() {
