@@ -10,7 +10,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Server {
-	
+	//java -cp ChatServer.jar chatServer.v1.Server
 	int port;
 	int backlog;
 	List<ChatRoom> chat_rooms;

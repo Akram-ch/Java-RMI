@@ -14,7 +14,7 @@ import java.util.Scanner;
 import babystep1.IPrinter;
 
 public class Client {
-	
+	//java -cp ChatClient.jar chatServer.v1.Client "Gorice"
 	String serverHost;
 	int serverPort;
 	Participant me;
@@ -22,10 +22,10 @@ public class Client {
 	IChatRoom cr;
 	List<IChatRoom> chat_rooms;
 	
-	Client(String serverHost, int serverPort) throws UnknownHostException, IOException, NotBoundException{
+	Client(String name,String serverHost, int serverPort) throws UnknownHostException, IOException, NotBoundException{
 		this.serverHost=serverHost;
 		this.serverPort=serverPort;
-		me = new Participant("Venon");
+		me = new Participant(name);
 		this.connect=false;
 		this.chat_rooms = new LinkedList<IChatRoom>();
 		this.cr=null;
@@ -117,6 +117,6 @@ public class Client {
 	}
 	
 	public static void main(String args[]) throws IOException, NotBoundException {
-		new Client("127.0.0.1",4320);
+		new Client(args[0],"127.0.0.1",4320);
 	}
 }
